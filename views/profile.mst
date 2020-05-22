@@ -1,0 +1,27 @@
+{{> header}}
+<form method="POST">
+<label>
+Usuario:
+<input type="text" value="{{user.name}}" name="name">
+</label>
+<label>
+            Email:
+            <input type="email" name="email" placeholder="E-mail" value="{{user.email}}"/>
+        </label>
+
+<input type="submit" value="Cadastrar" class="btn  btn-blue-bc">
+</form>
+<form method="POST" action="/profile/password">
+
+        <label>
+           Nova senha:
+            <input type="password" name="password" placeholder="Senha" value="{{user.password}}"/>
+        </label>
+        
+        <label>
+            Confirme nova Senha:
+            <input type="password" name="password-confirm" placeholder="Senha" value="{{user.password}}"/>
+        </label>
+        <input type="submit" value="Salvar" class="btn btn-blue-bc">
+
+</form>

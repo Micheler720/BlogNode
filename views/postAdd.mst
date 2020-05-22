@@ -1,0 +1,23 @@
+{{> header}}
+<div class="titlePagina">Adicionar Post</div>
+
+<form method="post" enctype='multipart/form-data'>
+    <div class="form">
+    <label>Titulo
+        <input type="text" name="title"/>
+    </label>
+    <label>Corpo
+        <textarea name="body"></textarea>
+    </label>
+    <label>
+        Imagem
+        <input name="photo" type="file" >
+    </label>
+    <label>
+        Tags:<small>(Separar Tag por Virgulas)</small>
+        <input type="text" name="tags"/>
+    </label>
+    <input name="autor" value="{{user._id}}" />
+    <input type="submit" name="Salvar" value="Gravar" class="btn btn-blue-bc"/>
+    </form>
+</form>

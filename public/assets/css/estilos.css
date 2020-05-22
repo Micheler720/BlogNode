@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-wrap: break-word;
+    background-color:transparent;
+}
+header{
+    position: fixed;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+body{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+ul{
+    list-style: none;
+    margin-top: 50px;
+}
+.active{
+    background-color: #ede6e6;
+}
+.menu nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    line-height: 40px;
+    width: auto;
+    display: flex;
+}
+.menu nav ul li a label{    
+    display: none;
+    width: 140px;
+    padding-left: 10px;
+}
+.menu nav li{
+    display: flex;
+}
+.menu nav ul li img{
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+    margin-top:7px ;
+    margin-bottom: 3px;
+}
+.menu{
+    height: 100%;
+    width: auto;
+    display: flex; 
+    background-color: #f5f5f5;   
+    justify-content: flex-start;
+}
+.menu nav ul li{
+    width: auto;
+    height: 40px;
+}
+.menu ul{ 
+    display: block;
+}
+.menu nav ul li:hover{
+    background-color: #ede6e6;
+    cursor: pointer;
+}
+.bodyDados{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 40px;
+}
+.botaoMenu{
+    margin-left: 10px;
+    margin-top: 10px ;
+    margin-bottom: 6px;
+    margin-right: 0px;
+    cursor: pointer;
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+.botaoMenuItem{
+    margin-top:5px;
+    background-color: slategray;
+    height: 5px;
+    width: 26px;
+}
+.dadosUsuarios{
+    width: auto;
+    height: 45px;    
+    border-bottom: 5px solid red;
+    display: fixed;
+    background-color: #f5f5f5 ;
+    
+}
+.dadosUsuarios h3{
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 45px;
+}
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    justify-content: space-between;  
+}
+.postItem{
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 5px 10px 10px #f6f6f6;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.postTitulo{
+    height: 25px;
+    background-color:#c6c6c6; 
+    line-height: 25px;
+    font-size: 15px ;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 0 0 #ffffff;
+}
+table, td,tr,th{
+    margin: 10px;
+    border: 1px solid #f6f6f6;
+    border-collapse: collapse;
+    padding: 5px;
+}
+.postBody{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+
+}
+.postAcoes{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: flex-end;
+}
+
+.btn{
+    text-decoration: none;
+    height: 30px;
+    width: auto;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-green{
+    color: green;
+    font-weight: bold;
+}
+.btn-green-bc{
+    background-color: green;
+    font-weight: bold;
+    color: #ffffff;
+}
+.btn:hover{
+   opacity: 0.8;
+}
+.btn-blue{
+    color: blue;
+    font-weight: bold;
+}
+.btn-blue-bc{
+    background-color: blue;
+    font-weight: bold;
+    color:#ffffff;
+}
+.titlePagina{
+    width: auto;
+    margin: 10px;
+    border: 2px solid #f6f6f6;
+    box-shadow: 1px 1px 1px 1px #c6c6c6;
+    padding:10px;
+    text-align: center;
+    font-weight: bold;
+    font-size:20px;
+}
+input{
+    border: 1px solid #c6c6c6;
+    border-radius: 2px;
+    height: 30px;
+    margin-top:5px;
+    padding-left: 5px ;
+}
+textarea{
+    border: 1px solid #c6c6c6;
+    border-radius: 2px;
+    height: 100px;
+    padding-left: 5px ;
+    padding-top: 5px ;
+}
+input:hover{
+    border: 1px solid  lightskyblue;
+
+}
+.form{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.form label{
+    margin-top: 10px;
+}
+.form label input, .form label textarea{
+    width: 100%;
+}
+.flash{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding:5px;
+    transition-property: all;
+    transition-duration: 2s;
+}
+.sucess{
+    background-color: #dcf8c6;
+}
+.error{
+    background-color: #e67576; 
+}
+.postTag{
+    margin-left: 10px;
+}
+/*@media (max-width:700px) and (min-width:470px) {
+    .postItem{
+        margin:auto;
+        margin-top: 10px; 
+        margin-bottom: 5px;
+        width: 450px;
+    }
+    .dadosUsuarios{
+        height: auto;
+    }
+    .dadosUsuarios h3{
+        line-height: 15px;
+    }
+}*/
+@media (max-width:884px) {
+    .postItem{
+        flex: 1;
+        margin:auto;
+        margin-top: 10px; 
+        margin-bottom: 5px; 
+    }
+    .menu{
+        background-color: #f5f5f5;
+    }
+    .dadosUsuarios{
+        height: auto;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    
+    .dadosUsuarios h3{
+        line-height: 15px;
+        padding-right: 20px;
+    }
+    .postItem{
+        margin: 0;
+    }
+    .menu ul{ 
+        display: none;
+    }
+    .bodyDados{
+        margin-left: 0px;
+    }
+    .dadosUsuarios{
+        display: fixed;
+        margin-left: 40px;
+        background-color: #f5f5f5 ;
+    }
+    .botaoMenu{
+        margin: 0px;
+        background-color: #f5f5f5;
+        height: 50px;
+        width: 40px;
+    }
+    .dadosUsuarios{
+        border: 0 solid transparent;
+        position: fixed;
+        height: 50px;
+    }
+    .posts{
+        margin-top: 50px ;
+        border-top: 5px solid red;
+    }
+    .postItem{
+        margin-top: 10px ;
+    }
+    .titlePagina, .postItem{
+        margin:10;
+        margin-top: 55px;
+        height: auto;
+    }
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 300px;
+}
+.tags{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    margin-left:20px ;
+    margin-top:10px ;
+    
+}
+.tags a{
+    color: #000000 ;
+}
+.selected a{
+    color: blue;
+}
+.tags div{
+    margin: 3px;
+}

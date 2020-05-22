@@ -1,0 +1,19 @@
+{{> header}}
+
+<div class="container">
+    <form method= "Post" >
+        <label>
+            Nome:
+            <input type="text" name="name" placeholder="Nome"/>
+        </label>
+        <label>
+            Email:
+            <input type="email" name="email" placeholder="E-mail"/>
+        </label>
+        <label>
+            Senha:
+            <input type="password" name="password" placeholder="Senha"/>
+        </label>
+        <input type="submit" value="Cadastrar" class="btn  btn-blue-bc">
+    </form>
+</div>

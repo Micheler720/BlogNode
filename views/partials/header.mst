@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet" href="/assets/css/estilos.css">
+<script src="/assets/js/script.js" type="text/javascript"></script>
+{{#pageTitle}}
+<title>{{pageTitle}}</title>
+{{/pageTitle}}
+{{^pageTitle}}
+<title>{{h.pageTitleDefault}}</title>
+{{/pageTitle}}
+</head>
+<body>
+<header>
+<section class="menu" id="menu">
+    <div class="botaoMenu" onclick= "menuNone();">
+        <div class="botaoMenuItem"></div>
+        <div class="botaoMenuItem"></div>
+        <div class="botaoMenuItem"></div>
+    </div>
+    
+    <nav >
+
+        <ul>
+            {{#h.menu}}        
+            <li><a href="{{slug}}"><img src="{{image}}" /><label>{{name}}</label></a></li>
+            {{/h.menu}}
+        </ul>
+    </nav>    
+</section>
+</header>
+<section class="bodyDados">
+<section class="dadosUsuarios">
+{{#user}}
+<h3>Usuario logado: {{user.name}}</h3>
+{{/user}}
+
+</section>
+{{#flashes}}
+        {{#sucess}}
+            <div class="flash sucess">{{.}}</div>
+        {{/sucess}}
+        {{#error}}
+            <div class="flash error">{{.}}</div>
+        {{/error}}
+    {{/flashes}}

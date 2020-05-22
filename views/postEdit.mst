@@ -1,0 +1,24 @@
+{{> header}}
+<div class="titlePagina">Editar Post</div>
+<form method="post" enctype='multipart/form-data'>
+<div class="form">
+    <label>Titulo
+        <input type="text" name="title" value="{{post.title}}"/>
+    </label>
+    <label>Corpo
+        <textarea name="body" >{{post.body}}</textarea>
+    </label>
+    <label>
+        Imagem
+        <input name="photo" type="file" >
+        {{#post.photo}}
+        <img src="/media/{{post.photo}}" height="300" />
+        {{/post.photo}}
+    </label>
+    <label>
+        Tags:
+    </label><small>(Separar Tag por Virgulas)</small>
+    <input type="text" name="tags" value="{{post.tags}}"/>
+    <input type="submit" name="Salvar" value="Salvar" class="btn btn-blue-bc"/>
+    </div>
+</form>

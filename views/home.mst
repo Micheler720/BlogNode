@@ -1,0 +1,53 @@
+{{> header}}
+<div class="tags">
+    {{#tags}}
+        <div class="{{class}}"><a href="/?t={{_id}}" >{{_id}} ({{count}})</a></div>
+    {{/tags}}
+
+</div>
+
+<div class="posts">
+
+<div class="postItem">
+<div class="postTitulo">Tabela de Teste</div>
+<table>
+    <thead>
+        <tr>
+            <th>Ingrediente</th>
+            <th>Quantidade</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#ingredientes}}
+            <tr>
+                <td>{{nome}}</td>
+                <td>{{qt}}</td>
+            </tr>
+        {{/ingredientes}}
+    </tbody>
+</table>
+
+</div>
+{{#posts}}
+<div class="postItem">
+    <div class="postTitulo">{{title}}</div>
+    <div class="photo">
+        {{#photo}}
+        <img src="/media/{{photo}}" />
+        {{/photo}}
+    </div>
+    <div class="postBody">    
+    {{body}}  <br><br> 
+    <strong>Autor: {{autor.name}}</strong> 
+    </div>
+    <div class="postAcoes">
+        <a href="/post/{{slug}}" class="btn btn-green">Slug</a>
+        {{#user}}
+        <a href="post/{{slug}}/edit" class="btn btn-blue">Editar</a>
+        {{/user}}
+    </div>
+</div>
+{{/posts}}
+
+</div>
+</section>

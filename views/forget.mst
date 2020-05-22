@@ -1,0 +1,10 @@
+{{> header}}
+
+<div class="container">
+<form method= 'post'>
+    <label> E-mail</label>
+    <input type="email" required value="" name="email">
+    
+    <input type="submit" class="btn btn-blue-bc" value="Redefinir Senha">
+</form>
+</div>

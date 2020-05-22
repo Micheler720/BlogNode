@@ -1,0 +1,22 @@
+{{> header}}
+
+
+
+<div class="postItem">
+    
+    <div class="postTitulo">{{post.title}}</div>
+    <div class="photo">
+        {{#post.photo}}
+        <img src="/media/{{post.photo}}" />
+        {{/post.photo}}
+    </div>
+    <div class="postBody">    
+        {{post.body}}    
+    </div>
+    <div class="postTag"><strong>Tags:</strong> {{post.tags}}</div>
+    {{#user}}
+    <div class="postAcoes">
+        <a href="{{post.slug}}/edit" class="btn btn-blue">Editar</a>
+    </div>
+    {{/user}}
+</div>
